@@ -1,5 +1,8 @@
 #! /bin/bash
 
+#author - divyanka.thakur16@gmail.com
+
+
 cd /opt/nvidia/deepstream/deepstream/sources/
 sudo git clone https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git
 cd deepstream_python_apps/bindings/
