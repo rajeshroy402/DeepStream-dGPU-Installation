@@ -23,7 +23,7 @@ cd ~/nvidia-debians-by-rajesh
 gdown https://drive.google.com/uc?id=1CfuV4pnEO1zx185gGCYR7G4RkTXErlNW
 # Downloading TensorRT debian
 cd ~/nvidia-debians-by-rajesh
-gdown https://drive.google.com/uc?id= #waiting to put tensorrt download link
+gdown https://drive.google.com/uc?id=1SuyTbdTs26Ss6NGNk5222ntWO9BoGbiZ
 sudo echo -e "blacklist nouveau\noptions nouveau modeset=0" >> sudo nano /etc/modprobe.d/blacklist-nouveau.conf
 sudo update-initramfs -u
 
