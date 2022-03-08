@@ -1,2 +1,8 @@
-# DeepStream-6.0_dGPU_Installation
-This repository is helpful for installing python bindings in deepstream 6.0
+# Hello and welcome to DeepStream SDK installation guide!!!
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
