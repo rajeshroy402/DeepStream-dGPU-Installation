@@ -6,6 +6,11 @@ In this guide we will walk you through an entire process of installing DeepStrea
 * More than 20 GB of installation space
 * NVIDIA Geforce graphics card
 
+#### If you want to uninstall existing setup, follow below:
+```
+bash 00_uninstall_exisiting_setup.sh
+```
+
 ## If your system meets the above requirements, follow below mentioned steps:
 ### Step 1:
 Clone the repository in your Ubuntu system.
