@@ -20,7 +20,7 @@ sudo pip3 install gdown
 source ~/.bashrc
 #Downloading DeepStream-6.0 debian
 cd ~/nvidia-debians-by-rajesh
-gdown https://drive.google.com/uc?id=1CfuV4pnEO1zx185gGCYR7G4RkTXErlNW
+gdown https://drive.google.com/uc?id=1yOOXVQZumiSt3OR93nsFcuRwmQ7ibRIE
 # Downloading TensorRT debian
 cd ~/nvidia-debians-by-rajesh
 gdown https://drive.google.com/uc?id=1SuyTbdTs26Ss6NGNk5222ntWO9BoGbiZ
