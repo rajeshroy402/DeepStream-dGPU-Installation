@@ -8,6 +8,7 @@ sudo git clone https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git
 cd deepstream_python_apps/
 # DS 6.0
 sudo git checkout v1.1.0
+sudo git submodule update --init
 cd bindings/
 #Download base dependencies
 sudo apt install -y git python-dev python3 python3-pip python3.6-dev python3.8-dev cmake g++ build-essential \
