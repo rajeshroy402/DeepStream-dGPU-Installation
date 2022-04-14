@@ -11,7 +11,7 @@ sudo apt-get install python3 python3-dev python3-pip
 sudo apt-get install linux-headers-$(uname -r)
 #Downloading NVIDIA Gefore Drivers
 cd ~/nvidia-debians-by-rajesh
-wget https://us.download.nvidia.com/XFree86/Linux-x86_64/470.63.01/NVIDIA-Linux-x86_64-470.63.01.run
+wget https://us.download.nvidia.com/XFree86/Linux-x86_64/470.103.01/NVIDIA-Linux-x86_64-470.103.01.run
 #Downloading CUDA 11.4
 cd ~/nvidia-debians-by-rajesh
 wget https://developer.download.nvidia.com/compute/cuda/11.4.3/local_installers/cuda_11.4.3_470.82.01_linux.run
