@@ -13,6 +13,7 @@ sudo apt-get remove --purge '*nvidia*'
 sudo apt-get remove --purge '*cuda*'
 sudo apt-get remove --purge '*cudnn*'
 sudo apt-get remove --purge '*tensorrt*'
+sudo apt-get remove --purge deepstream-6.0
 
 
 sudo apt-get -y --purge remove "*cublas*" "cuda*" "nsight*" 
