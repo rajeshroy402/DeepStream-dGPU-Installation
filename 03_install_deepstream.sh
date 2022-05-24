@@ -2,10 +2,11 @@
 
 #author - rajeshroy402@gmail.com
 
-cd ~/nvidia-debians-by-rajesh
 # Installing CUDA
-sudo sh cuda_11.4.3_470.82.01_linux.run
-sudo echo -e "export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}} \nexport LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> sudo nano ~/.bashrc
+sudo echo "Hi, let's install CUDA TensorRT and DeepStream here!"
+cd ~/nvidia-debians-by-rajesh
+sudo sh cuda_11.6.1_510.47.03_linux.run
+sudo printf "export PATH=/usr/local/cuda-11.6/bin${PATH:+:${PATH}}\nexport LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> /home/$USER/.bashrc
 source ~/.bashrc
 sudo ldconfig
 echo "Printing your CUDA details to confirm"
@@ -16,20 +17,21 @@ sudo apt-get install nvidia-prime
 sudo prime-select nvidia
 
 #Installing TensorRT
-cd ~/nvidia-debians-by-rajesh
-echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda-repo.list
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
-sudo apt-key add 7fa2af80.pub
-sudo apt-get update -y
-sudo dpkg -i nv-tensorrt-repo-ubuntu1804-cuda11.3-trt8.0.1.6-ga-20210626_1-1_amd64.deb
-sudo apt-key add /var/nv-tensorrt-repo-ubuntu1804-cuda11.3-trt8.0.1.6-ga-20210626/7fa2af80.pub
-sudo apt-get update -y
-sudo apt-get install libnvinfer8=8.0.1-1+cuda11.3 libnvinfer-plugin8=8.0.1-1+cuda11.3 libnvparsers8=8.0.1-1+cuda11.3 libnvonnxparsers8=8.0.1-1+cuda11.3 libnvinfer-bin=8.0.1-1+cuda11.3 libnvinfer-dev=8.0.1-1+cuda11.3 libnvinfer-plugin-dev=8.0.1-1+cuda11.3 libnvparsers-dev=8.0.1-1+cuda11.3 libnvonnxparsers-dev=8.0.1-1+cuda11.3 libnvinfer-samples=8.0.1-1+cuda11.3 libnvinfer-doc=8.0.1-1+cuda11.3 -y
-
-# Installing DeepStream SDK 6.0
 
 cd ~/nvidia-debians-by-rajesh
-sudo apt-get install ./deepstream-6.0_6.0.0-1_amd64.deb
+sudo rm /etc/apt/sources.list.d/*cuda*
+sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/3bf863cc.pub
+sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+sudo apt-get update -y
+sudo dpkg -i nv-tensorrt-repo-ubuntu2004-cuda11.4-trt8.2.5.1-ga-20220505_1-1_amd64.deb
+sudo apt-key add /var/nv-tensorrt-repo-ubuntu2004-cuda11.4-trt8.2.5.1-ga-20220505/82307095.pub
+sudo apt-get update
+sudo apt install tensorrt
+
+# Installing DeepStream SDK 6.1
+
+cd ~/nvidia-debians-by-rajesh
+sudo apt-get install ./deepstream-6.1_6.1.0-1_amd64.deb
 rm ${HOME}/.cache/gstreamer-1.0/registry.x86_64.bin
 
 echo "Installation is completed !!!"
