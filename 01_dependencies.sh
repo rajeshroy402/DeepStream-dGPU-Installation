@@ -2,7 +2,7 @@
 
 #author - rajeshroy402@gmail.com
 
-echo "We will install dependencies for DeepStream-6.0 in this process"
+sudo echo "We will install dependencies for DeepStream-6.0 in this process"
 rm -rf ~/nvidia-debians-by-rajesh
 mkdir ~/nvidia-debians-by-rajesh
 sudo apt update -y
@@ -26,7 +26,8 @@ gdown https://drive.google.com/uc?id=1yOOXVQZumiSt3OR93nsFcuRwmQ7ibRIE
 # Downloading TensorRT debian
 cd ~/nvidia-debians-by-rajesh
 gdown https://drive.google.com/uc?id=1SuyTbdTs26Ss6NGNk5222ntWO9BoGbiZ
-sudo echo -e "blacklist nouveau\noptions nouveau modeset=0" >> sudo nano /etc/modprobe.d/blacklist-nouveau.conf
+sudo touch /etc/modprobe.d/blacklist-nouveau.conf
+sudo printf "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
 sudo update-initramfs -u
 
-echo -e "Please restart your device now: \nUse 'sudo reboot now'"
+printf "Please restart your device now: \nUse 'sudo reboot now'\n"
