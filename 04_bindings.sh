@@ -1,6 +1,7 @@
 #! /bin/bash
 
 #author - divyanka.thakur16@gmail.com
+sudo echo "hey Hi, final steps with bindings here!"
 
 cd /opt/nvidia/deepstream/deepstream/sources/
 # Sync deepstream_python_apps repo from github
