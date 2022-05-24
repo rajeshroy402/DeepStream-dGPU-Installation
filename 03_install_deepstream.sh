@@ -2,11 +2,12 @@
 
 #author - rajeshroy402@gmail.com
 
+sudo echo "Hey, let's do the final hooby-dooby here!"
 cd ~/nvidia-debians-by-rajesh
 # Installing CUDA
 sudo sh cuda_11.4.3_470.82.01_linux.run
-sudo echo -e "export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}} \nexport LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> sudo nano ~/.bashrc
-source ~/.bashrc
+sudo printf "export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}\nexport LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> /home/$USER/.bashrc
+source /home/$USER/.bashrc
 sudo ldconfig
 echo "Printing your CUDA details to confirm"
 nvcc --version
