@@ -21,7 +21,7 @@ libyaml-cpp-dev \
 gcc \
 make \
 git \
-python3
+python3 -y
 sudo apt-get install gcc make git libtool autoconf autogen pkg-config cmake
 sudo apt-get install python3 python3-dev python3-pip
 #sudo apt-get install linux-headers-$(uname -r)
