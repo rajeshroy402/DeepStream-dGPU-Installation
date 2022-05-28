@@ -7,6 +7,6 @@ sudo apt install libglvnd-dev -y
 sudo apt install pkg-config -y
 # Installing NVIDIA KERNEL
 chmod 755 NVIDIA-Linux-x86_64-510.47.03.run
-sudo sh NVIDIA-Linux-x86_64-510.47.03.run --silent --no-nouveau-check --disable-nouveau --install-libglvnd
+sudo sh NVIDIA-Linux-x86_64-510.47.03.run
 
 echo "Please reboot your device now"
