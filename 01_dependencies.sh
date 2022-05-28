@@ -28,10 +28,10 @@ sudo apt-get install python3 python3-dev python3-pip
 
 #Downloading NVIDIA Gefore Drivers
 cd ~/nvidia-debians-by-rajesh
-wget https://us.download.nvidia.com/XFree86/Linux-x86_64/510.47.03/NVIDIA-Linux-x86_64-510.47.03.run
+#wget https://us.download.nvidia.com/XFree86/Linux-x86_64/510.47.03/NVIDIA-Linux-x86_64-510.47.03.run
 #Downloading CUDA 11.6
 cd ~/nvidia-debians-by-rajesh
-wget https://developer.download.nvidia.com/compute/cuda/11.6.1/local_installers/cuda_11.6.1_510.47.03_linux.run
+wget https://developer.download.nvidia.com/compute/cuda/11.6.1/local_installers/cuda-repo-ubuntu2004-11-6-local_11.6.1-510.47.03-1_amd64.deb
 sudo apt install python3-pip -y
 sudo pip3 install gdown
 source ~/.bashrc
