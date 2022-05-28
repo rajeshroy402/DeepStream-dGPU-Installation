@@ -42,4 +42,8 @@ gdown https://drive.google.com/uc?id=1aHuH0G5Ep5cl47LscDN8pzNOhTUF1Yh-
 cd ~/nvidia-debians-by-rajesh
 gdown https://drive.google.com/uc?id=14-96XXzqbjfnaGrMw_EPLThQ2IoCA3U-
 
+sudo touch /etc/modprobe.d/blacklist-nouveau.conf
+sudo printf "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
+sudo update-initramfs -u
+
 printf "Please restart your device now: \nUse 'sudo reboot now'\n"
