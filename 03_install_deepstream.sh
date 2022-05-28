@@ -9,7 +9,7 @@ cd ~/nvidia-debians-by-rajesh
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
 sudo dpkg -i cuda-keyring_1.0-1_all.deb
 sudo apt-get update -y
-sudo sh cuda_11.6.1_510.47.03_linux.run --silent --toolkit
+sudo sh cuda_11.6.1_510.47.03_linux.run
 sudo printf "export PATH=/usr/local/cuda-11.6/bin${PATH:+:${PATH}}\nexport LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> /home/$USER/.bashrc
 echo "Let's refresh the source file"
 source ~/.bashrc
