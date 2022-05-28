@@ -8,13 +8,11 @@ mkdir ~/nvidia-debians-by-rajesh
 sudo apt update -y
 sudo apt install nano -y
 sudo apt install \
-libssl1.1 \
 libgstreamer1.0-0 \
 gstreamer1.0-tools \
 gstreamer1.0-plugins-good \
 gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-ugly \
-gstreamerdri1.0-libav \
 libgstrtspserver-1.0-0 \
 libjansson4 \
 libyaml-cpp-dev \
@@ -22,8 +20,8 @@ gcc \
 make \
 git \
 python3 -y
-sudo apt-get install gcc make git libtool autoconf autogen pkg-config cmake
-sudo apt-get install python3 python3-dev python3-pip
+sudo apt-get install gcc make git libtool autoconf autogen pkg-config cmake -y
+sudo apt-get install python3 python3-dev python3-pip -y
 #sudo apt-get install linux-headers-$(uname -r)
 
 #Downloading NVIDIA Gefore Drivers
