@@ -1,8 +1,8 @@
-# Hello and welcome to DeepStream SDK installation guide!!!
+# Hello and welcome to DeepStream SDK-6.1 on Ubuntu 20.04 LTS installation guide!!!
 
 In this guide we will walk you through an entire process of installing DeepStream SDK in your dGPU system. Before you proceed, you need to have the below mentioned prequisites fulfilled to complete installation setup successfully.
 
-* Ubuntu 18.04 OS
+* Ubuntu 20.04 OS
 * More than 20 GB of installation space
 * NVIDIA Geforce graphics card
 
@@ -16,7 +16,7 @@ bash 00_uninstall_exisiting_setup.sh
 Clone the repository in your Ubuntu system.
 
 ```
-git clone https://github.com/rajeshroy402/DeepStream-6.0-dGPU-Installation.git
+git clone https://github.com/rajeshroy402/DeepStream-dGPU-Installation.git
 ```
 
 ### Step 2:
@@ -24,40 +24,45 @@ Install dependencies and download the required setup files for DeepStream SDK in
 Note: This will required an active internet connection as it will download files of more than 3 GB size
 
 ```
-cd Deepstream-6.0-dGPU-Installation
+cd Deepstream-dGPU-Installation
 bash ./01_dependencies.sh
 ```
 Once your process is executed, reboot your system.
 
 ### Step 3:
-Go to the DeepStream-6.0-dGPU-Installation folder
-Now we will install NVIDIA DRIVER in your system. <br/>
-Note: This will open NVIDIA installation GUI in your terminal. You need to install it without x-config. If your system suggests any dependencies, please install them before proceeding with this step.
+Go to the DeepStream-dGPU-Installation folder
+Now we will install NVIDIA DRIVER and CUDA in your system. <br/>
 
 ```
-bash ./02_installing_nvidia_kernel.sh
+bash ./02_cuda-display-driver-installation.sh
 ```
 Great, now you need to reboot your system again to confirm installation of drivers. <br/>
-You can check your installation by running :  `nvidia-smi` on the terminal
+You can check your installation by running :  `nvidia-smi` and `nvcc --version` on the terminal
 
 ### Step 4:
-In this step we will install CUDA 11.4, TensorRT 8.0 and DeepStream-6.0 <br/>
-At first the terminal will load a GUI to accept and install CUDA in your system. You need to uncheck NVIDIA DRIVER option while installing CUDA.
+In this step we will install TensorRT 8.2.5.1 <br/>
 
 ```
-bash ./03_install_deepstream.sh
+bash ./03_install_tensorrt.sh
 ```
-This time you do not reboot!!! 😄 <br/>
+
+### Step 5:
+All set for DeepStream-6.1 installation. Let's do that now! <br/>
+
+```
+bash ./04_install-deepstream-6.1.sh
+```
+Congratulation - 
 `Your DeepStream installation is completed!`
 
 
-### Step 5:
+### Step 6:
 Moving to the final step, DeepStream comes with python apps support as well. Let's finish that to get your IVA rolling up.
 
 ```
-bash ./04_bindings.sh
+bash ./05_bindings.sh
 ```
-Now you have your system ready to use DeepStream SDK 6.0 for your IVA driven usecase.
+Now you have your system ready to use DeepStream SDK 6.1 for your IVA driven usecase.
 
 # Upcoming:
 I will soon include video sessions on how to work with DeepStream post installation. <br/>
