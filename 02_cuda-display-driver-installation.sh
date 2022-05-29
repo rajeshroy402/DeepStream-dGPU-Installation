@@ -22,7 +22,7 @@ sudo apt-get update -y
 sudo apt-get -y install cuda
 sudo printf "export PATH=/usr/local/cuda-11.6/bin${PATH:+:${PATH}}\nexport LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> /home/$USER/.bashrc
 echo "Let's refresh the source file"
-source ~/.bashrc
+source /home/$USER/.bashrc
 sudo ldconfig
 echo "Printing your CUDA details to confirm"
 
