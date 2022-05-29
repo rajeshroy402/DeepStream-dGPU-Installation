@@ -1,6 +1,10 @@
-# Hello and welcome to DeepStream SDK installation guide!!!
+# Hello and welcome to DeepStream SDK 6.0/6.0.1/6.1 installation guide!!!
 
-In this guide we will walk you through an entire process of installing DeepStream SDK in your dGPU system. Before you proceed, you need to have the below mentioned prequisites fulfilled to complete installation setup successfully.
+# Note :
+If you are looking to install DeepStream-6.1 in your machine, goto below link - https://github.com/rajeshroy402/DeepStream-dGPU-Installation/tree/20.04-6.1
+
+
+In this guide we will walk you through an entire process of installing DeepStream SDK-6.0 in your dGPU system. Before you proceed, you need to have the below mentioned prequisites fulfilled to complete installation setup successfully.
 
 * Ubuntu 18.04 OS
 * More than 20 GB of installation space

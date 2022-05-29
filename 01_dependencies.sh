@@ -19,7 +19,7 @@ cd ~/nvidia-debians-by-rajesh
 wget https://developer.download.nvidia.com/compute/cuda/11.4.3/local_installers/cuda_11.4.3_470.82.01_linux.run
 sudo apt install python3-pip -y
 sudo pip3 install gdown
-source ~/.bashrc
+source /home/$USER/.bashrc
 #Downloading DeepStream-6.0 debian
 cd ~/nvidia-debians-by-rajesh
 gdown https://drive.google.com/uc?id=1yOOXVQZumiSt3OR93nsFcuRwmQ7ibRIE
