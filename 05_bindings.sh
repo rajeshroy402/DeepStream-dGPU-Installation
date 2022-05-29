@@ -23,7 +23,7 @@ sudo git submodule update --init
 # Installing Gst-python
 sudo apt-get install -y apt-transport-https ca-certificates -y
 sudo update-ca-certificates -y
-cd 3rdparty/gst-python/
+cd ../3rdparty/gst-python/
 sudo ./autogen.sh
 sudo make
 sudo make install
