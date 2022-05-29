@@ -17,6 +17,7 @@ git clone https://github.com/rajeshroy402/DeepStream-dGPU-Installation.git
 #### If you want to uninstall existing setup, follow below command:
 ```
 cd DeepStream-dGPU-Installation
+git checkout 20.04-6.1
 bash ./00_uninstall_exisiting_setup.sh
 ```
 
@@ -26,6 +27,7 @@ Note: This will required an active internet connection as it will download files
 
 ```
 cd Deepstream-dGPU-Installation
+git checkout 20.04-6.1
 bash ./01_dependencies.sh
 ```
 Once your process is executed, reboot your system.
