@@ -8,8 +8,9 @@ sudo echo "Hi, let's install CUDA and Display Driver here!"
 cd ~/nvidia-debians-by-rajesh
 sudo apt install libglvnd-dev -y
 sudo apt install pkg-config -y
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
 sudo dpkg -i cuda-keyring_1.0-1_all.deb
+sudo apt-key del 7fa2af80
 sudo apt-get update -y
 
 echo "let's start with CUDA-11.6"
