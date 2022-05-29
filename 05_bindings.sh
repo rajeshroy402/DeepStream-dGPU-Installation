@@ -4,7 +4,7 @@
 sudo echo "Hi, let's start the bindings part!"
 
 cd /opt/nvidia/deepstream/deepstream/sources/
-rm -rf deepstream_python_apps/
+sudo rm -rf deepstream_python_apps/
 # Sync deepstream_python_apps repo from github
 sudo git clone https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git
 cd deepstream_python_apps/
