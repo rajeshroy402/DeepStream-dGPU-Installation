@@ -2,7 +2,10 @@
 
 #author - rajeshroy402@gmail.com
 
-echo "Started uninstalling dependencies"
+sudo echo "Started uninstalling dependencies"
+
+sudo nvidia-uninstall
+sudo $CUDA_PATH/bin/cuda-uninstaller
 
 sudo apt -y remove --purge "^libcuda.*"
 sudo apt -y remove --purge "^cuda.*"
