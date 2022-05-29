@@ -3,13 +3,8 @@
 In this guide we will walk you through an entire process of installing DeepStream SDK in your dGPU system. Before you proceed, you need to have the below mentioned prequisites fulfilled to complete installation setup successfully.
 
 * Ubuntu 20.04 OS
-* More than 20 GB of installation space
+* More than 40 GB of installation space
 * NVIDIA Geforce graphics card
-
-#### If you want to uninstall existing setup, follow below:
-```
-bash 00_uninstall_exisiting_setup.sh
-```
 
 ## If your system meets the above requirements, follow below mentioned steps:
 ### Step 1:
@@ -17,6 +12,12 @@ Clone the repository in your Ubuntu system.
 
 ```
 git clone https://github.com/rajeshroy402/DeepStream-dGPU-Installation.git
+```
+
+#### If you want to uninstall existing setup, follow below command:
+```
+cd DeepStream-dGPU-Installation
+bash ./00_uninstall_exisiting_setup.sh
 ```
 
 ### Step 2:
