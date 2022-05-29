@@ -22,7 +22,7 @@ sudo git submodule update --init
 # Installing Gst-python
 sudo apt-get install -y apt-transport-https ca-certificates -y
 sudo update-ca-certificates -y
-cd ../3rdparty/gst-python/
+cd 3rdparty/gst-python/
 sudo ./autogen.sh
 sudo make
 sudo make install
@@ -33,7 +33,7 @@ cd build
 sudo cmake ..
 sudo make
 # Installing the pip wheel
-sudo apt install libgirepository1.0-dev libcairo2-dev
+sudo apt install libgirepository1.0-dev libcairo2-dev -y
 sudo pip3 install ./pyds-1.1.2-py3-none*.whl
 
 echo "You are ready to use the python apps now!"
