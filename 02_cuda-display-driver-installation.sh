@@ -16,6 +16,7 @@ sudo apt-get update -y
 echo "let's start with CUDA-11.6"
 #wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 #sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
+sudo add-apt-repository --remove "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
 sudo rm /etc/apt/sources.list.d/*cuda*
 sudo dpkg -i cuda-repo-ubuntu2004-11-6-local_11.6.1-510.47.03-1_amd64.deb
 sudo apt-key add /var/cuda-repo-ubuntu2004-11-6-local/7fa2af80.pub
