@@ -18,7 +18,7 @@ sudo prime-select nvidia
 
 #Installing TensorRT
 cd ~/nvidia-debians-by-rajesh
-echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda-repo.list
+sudo echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda-repo.list
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
 sudo apt-key add 7fa2af80.pub
 sudo apt-get update -y
