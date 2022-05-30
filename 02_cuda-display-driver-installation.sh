@@ -18,6 +18,7 @@ echo "let's start with CUDA-11.6"
 #sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
 sudo dpkg -i cuda-repo-ubuntu2004-11-6-local_11.6.1-510.47.03-1_amd64.deb
 sudo apt-key add /var/cuda-repo-ubuntu2004-11-6-local/7fa2af80.pub
+sudo rm /etc/apt/sources.list.d/cuda-ubuntu2004-x86_64.list
 sudo apt-get update -y
 sudo apt-get -y install cuda
 sudo printf "export PATH=/usr/local/cuda-11.6/bin${PATH:+:${PATH}}\nexport LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> /home/$USER/.bashrc
