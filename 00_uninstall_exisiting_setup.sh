@@ -30,6 +30,6 @@ sudo rm -rf /usr/local/deepstream /usr/lib/x86_64-linux-gnu/gstreamer-1.0/libgst
 /usr/lib/x86_64-linux-gnu/gstreamer-1.0/deepstream* /opt/nvidia/deepstream/deepstream*
 
 sudo rm -rf /usr/lib/x86_64-linux-gnu/libv41/plugins/libcuvidv4l2_plugin.so
-sudo rm /usr/local/cuda*
+sudo rm -rf /usr/local/cuda*
 
 echo "Kindly reboot your device"
