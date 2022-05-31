@@ -39,6 +39,7 @@ gdown https://drive.google.com/uc?id=1aHuH0G5Ep5cl47LscDN8pzNOhTUF1Yh-
 # Downloading TensorRT debian
 cd ~/nvidia-debians-by-rajesh
 gdown https://drive.google.com/uc?id=14-96XXzqbjfnaGrMw_EPLThQ2IoCA3U-
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
 
 sudo rm /etc/modprobe.d/blacklist-nouveau.conf && sudo touch /etc/modprobe.d/blacklist-nouveau.conf
 sudo printf "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
