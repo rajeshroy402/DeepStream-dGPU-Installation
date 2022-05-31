@@ -3,7 +3,8 @@
 #author - rajeshroy402@gmail.com
 
 sudo echo "Started uninstalling dependencies"
-
+sudo apt --fix-missing update
+sudo apt --fix-broken install
 sudo nvidia-uninstall
 sudo $CUDA_PATH/bin/cuda-uninstaller
 sudo apt-get remove --purge '*nvidia*' -y
