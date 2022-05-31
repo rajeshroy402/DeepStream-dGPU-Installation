@@ -39,4 +39,4 @@ sudo pip3 install ./pyds-1.1.2-py3-none*.whl
 
 echo "You are ready to use the python apps now!"
 echo "Run the below lines to test"
-printf "cd deepstream_python_apps/apps/deepstream-test1\nsudo python3 deepstream_test_1.py <input .h264 file>"
+printf "cd deepstream_python_apps/apps/deepstream-test1\nsudo python3 deepstream_test_1.py <input .h264 file>\n"
