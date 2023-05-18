@@ -22,24 +22,31 @@ git \
 python3 -y
 sudo apt-get install gcc make git libtool autoconf autogen pkg-config cmake -y
 sudo apt-get install python3 python3-dev python3-pip -y
-#sudo apt-get install linux-headers-$(uname -r)
+sudo apt-get install dkms
+sudo apt install libssl1.1 gstreamer1.0-libav libgstreamer-plugins-base1.0-dev libjsoncpp-dev protobuf-compiler -y
+sudo apt-get install linux-headers-$(uname -r)
 
 #Downloading NVIDIA Gefore Drivers
 cd ~/nvidia-debians-by-rajesh
-#wget https://us.download.nvidia.com/XFree86/Linux-x86_64/510.47.03/NVIDIA-Linux-x86_64-510.47.03.run
+wget https://us.download.nvidia.com/XFree86/Linux-x86_64/525.105.17/NVIDIA-Linux-x86_64-525.105.17.run
+
 #Downloading CUDA 11.6
 cd ~/nvidia-debians-by-rajesh
-wget https://developer.download.nvidia.com/compute/cuda/11.6.1/local_installers/cuda-repo-ubuntu2004-11-6-local_11.6.1-510.47.03-1_amd64.deb
+wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+
+#Downloading and installing CUDA keyring
+cd ~/nvidia-debians-by-rajesh
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
+sudo apt-get update
+
 sudo apt install python3-pip -y
 sudo pip3 install gdown
 source ~/.bashrc
-#Downloading DeepStream-6.1 debian
+
+#Downloading DeepStream-6.2 debian
 cd ~/nvidia-debians-by-rajesh
-gdown https://drive.google.com/uc?id=1aHuH0G5Ep5cl47LscDN8pzNOhTUF1Yh-
-# Downloading TensorRT debian
-cd ~/nvidia-debians-by-rajesh
-gdown https://drive.google.com/uc?id=14-96XXzqbjfnaGrMw_EPLThQ2IoCA3U-
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
+sudo gdown https://drive.google.com/uc?id=1MPBIHmZxu8z9pPAsTxUTAkddUW1IziyX
 
 sudo rm /etc/modprobe.d/blacklist-nouveau.conf && sudo touch /etc/modprobe.d/blacklist-nouveau.conf
 sudo printf "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf

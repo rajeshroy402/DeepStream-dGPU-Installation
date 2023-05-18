@@ -18,8 +18,10 @@ sudo apt -y remove --purge "^cuda.*" -y
 sudo apt -y remove --purge "^libnvidia.*" -y
 sudo apt -y remove --purge "^nvidia.*" -y
 sudo apt -y remove --purge "^tensorrt.*" -y
-sudo apt-get remove --purge deepstream-6.1 -y
+sudo apt-get remove --purge deepstream-* -y
 
+sudo add-apt-repository --remove "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+sudo rm /etc/apt/sources.list.d/*cuda*
 
 sudo apt-get -y --purge remove "*cublas*" "cuda*" "nsight*" -y 
 sudo apt remove -y --autoremove nvidia-cuda-toolkit -y
