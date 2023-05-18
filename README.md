@@ -50,7 +50,7 @@ bash ./03_install_cuda-and-tensorrt.sh
 ```
 
 ### Step 5:
-All set for DeepStream-6.1 installation. Let's do that now! <br/>
+All set for DeepStream-6.2 installation. Let's do that now! <br/>
 
 ```
 bash ./04_install-deepstream-6.2.sh
@@ -65,7 +65,7 @@ Moving to the final step, DeepStream comes with python apps support as well. Let
 ```
 bash ./05_bindings.sh
 ```
-Now you have your system ready to use DeepStream SDK 6.1 for your IVA driven usecase.
+Now you have your system ready to use DeepStream SDK 6.2 for your IVA driven usecase.
 
 # Upcoming:
 I will soon include video sessions on how to work with DeepStream post installation. <br/>
