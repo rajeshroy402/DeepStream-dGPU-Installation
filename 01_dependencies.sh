@@ -2,7 +2,7 @@
 
 #author - rajeshroy402@gmail.com
 
-sudo echo "We will install dependencies for DeepStream-6.1 in this process"
+sudo echo "We will install dependencies for DeepStream-6.2 in this process"
 rm -rf ~/nvidia-debians-by-rajesh
 mkdir ~/nvidia-debians-by-rajesh
 sudo apt update -y
