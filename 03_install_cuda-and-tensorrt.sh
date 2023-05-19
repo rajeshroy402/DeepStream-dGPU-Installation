@@ -4,7 +4,7 @@
 
 sudo echo "Hi, let's install CUDA and TensorRT here!"
 
-cd ~/nvidia-debians-by-rajesh
+cd /home/$USER/nvidia-debians-by-rajesh
 
 # Installing CUDA
 sudo echo "Installing CUDA..."

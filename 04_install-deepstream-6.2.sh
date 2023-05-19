@@ -5,7 +5,7 @@
 # Installing CUDA
 sudo echo "Hi, let's install DeepStream here!"
 
-cd ~/nvidia-debians-by-rajesh
+cd /home/$USER/nvidia-debians-by-rajesh
 echo "Let's install DS-6.2!"
 
 sudo apt-get install ./deepstream-6.2_6.2.0-1_amd64.deb -y
