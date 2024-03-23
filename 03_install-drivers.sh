@@ -1,3 +1,10 @@
+#! /bin/bash
+
+#This is created by Rajesh Roy (rajeshroy402@gmail.com)
+
+echo "This repo is owned and managed by Rajesh Roy <rajeshroy402@gmail.com>"
+
+############################################################
 
 folder_path=~/files_by_rajesh
 
