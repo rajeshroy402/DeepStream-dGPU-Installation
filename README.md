@@ -1,4 +1,4 @@
-# Hello and welcome to DeepStream SDK-6.2 on Ubuntu 20.04 LTS installation guide!!!
+# Hello and welcome to DeepStream SDK-6.3 on Ubuntu 20.04 LTS installation guide!!!
 
 In this guide we will walk you through an entire process of installing DeepStream SDK in your dGPU system. Before you proceed, you need to have the below mentioned prequisites fulfilled to complete installation setup successfully.
 
@@ -17,55 +17,49 @@ git clone https://github.com/rajeshroy402/DeepStream-dGPU-Installation.git
 #### If you want to uninstall existing setup, follow below command:
 ```
 cd DeepStream-dGPU-Installation
-git checkout 20.04-6.2
-bash ./00_uninstall_exisiting_setup.sh
+git checkout 20.04-6.3
+sudo bash ./01_prepare.sh 
 ```
+
+Once your process is executed, reboot your system.
 
 ### Step 2:
 Install dependencies and download the required setup files for DeepStream SDK installation. <br />
-Note: This will required an active internet connection as it will download files of more than 3 GB size
+Note: This will required an active internet connection as it will download files of more than 5 GB size
+
+Go to the DeepStream-dGPU-Installation folder and run the below command:
 
 ```
-cd Deepstream-dGPU-Installation
-git checkout 20.04-6.2
-bash ./01_dependencies.sh
+sudo bash ./02_download_files.sh
 ```
-Once your process is executed, reboot your system.
+
 
 ### Step 3:
-Go to the DeepStream-dGPU-Installation folder
+
 Now we will install NVIDIA DRIVER in your system. <br/>
 
 ```
-bash ./02_display-driver-installation.sh
+sudo bash ./03_install-drivers.sh
 ```
 Great, now you need to reboot your system again to confirm installation of drivers. <br/>
 You can check your installation by running :  `nvidia-smi` on the terminal
 
 ### Step 4:
-In this step we will install CUDA and TensorRT <br/>
+In this step we will install CUDA and TensorRT and DeepStream-6.3 <br/>
+
+Go to the DeepStream-dGPU-Installation folder and run the below command:
 
 ```
-bash ./03_install_cuda-and-tensorrt.sh
+sudo bash ./04_install-final-softwares.sh
 ```
 
-### Step 5:
-All set for DeepStream-6.2 installation. Let's do that now! <br/>
-
-```
-bash ./04_install-deepstream-6.2.sh
-```
 Congratulation - 
 `Your DeepStream installation is completed!`
 
 
-### Step 6:
-Moving to the final step, DeepStream comes with python apps support as well. Let's finish that to get your IVA rolling up.
+### Step 5:
 
-```
-bash ./05_bindings.sh
-```
-Now you have your system ready to use DeepStream SDK 6.2 for your IVA driven usecase.
+Python bindings will come in the upcoming release.
 
 # Upcoming:
 I will soon include video sessions on how to work with DeepStream post installation. <br/>
